@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Diện tích hình tròn <span id="dientich"></span> </p>
+    <p>Chu vi hình tròn <span id="chuvi"></span> </p>
+    <script>
+        let r = +prompt("Nhập bán kinh hình tròn:")
+        function circleArea(r) {
+            let s = Math.PI*r*r;
+            let n = s.toFixed(2)
+            return n;
+        }
+        function circleDiameter(r) {
+            let p = Math.PI*r*2;
+            let m = p.toFixed(2)
+
+            return m;
+        }
+        
+        
+        document.getElementById("dientich").innerHTML = circleDiameter(r);
+        document.getElementById("chuvi").innerHTML = circleArea(r);
+        
+    </script>
+</body>
+</html>

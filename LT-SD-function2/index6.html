@@ -8,11 +8,13 @@
 </head>
 <body>
     <script>
-        let num = +prompt("Bình phương số:")
-        function square(num) {
-            return num*num;
+        let n = prompt("Nhập số để kiểm tra");
+        function test(n) {
+            if (n > 0) {
+                return true;
+            } else return false;
         }
-        
+    console.log(test(n))
     </script>
 </body>
 </html>
